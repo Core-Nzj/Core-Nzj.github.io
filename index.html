@@ -2,37 +2,85 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>レトロガジェット研究所 - CORE</title>
   <style>
     body {
-      background-color: #111;
-      color: #00ffcc;
-      font-family: "Courier New", monospace;
-      text-align: center;
       margin: 0;
+      background: #0e0e0e;
+      color: #00ffe0;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
       padding: 2em;
     }
+
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin-bottom: 0.5em;
+      animation: glow 1.5s infinite alternate;
     }
-    p {
-      font-size: 1em;
-      color: #ccc;
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+      }
     }
+
+    nav {
+      margin-top: 2em;
+    }
+
+    a {
+      color: #00ffe0;
+      margin: 0 1em;
+      text-decoration: none;
+      border-bottom: 1px dashed #00ffe0;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
+    }
+
     footer {
-      margin-top: 3em;
+      margin-top: auto;
       font-size: 0.8em;
       color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5em 0;
+      }
     }
   </style>
 </head>
 <body>
   <h1>RetroGadgetLaboratory</h1>
   <p>世界線をまたぐ、レトロとテクノロジーの境界。</p>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
   <footer>
     &copy; 2025 CORE - レトロガジェット研究所<br>
-    設立者: Nzj（ラボメンNo.001） / Assistant: Q-Tsundra005
+    Design by Q-Tsundra005 (助手)
   </footer>
 </body>
 </html>
