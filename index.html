@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>レトロガジェット研究所 - CORE</title>
   <style>
-    body {
-      background-color: #ffffff;
-      color: #000000;
-      font-family: 'Hiragino Mincho ProN', '游明朝', 'MS PMincho', serif;
+    html, body {
+      height: 100%;
       margin: 0;
-      padding: 2em;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      color: #ff6600;
-      text-shadow: 0 0 5px #ffaa00, 0 0 10px #ffaa00;
-      margin-bottom: 0.5em;
-      font-family: 'Courier New', monospace;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Hiragino Mincho ProN', '游明朝', 'MS PMincho', serif;
+      color: #000;
     }
 
     section {
-      margin: 2em 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 4.0em;
+      color: #ff6600;
+      text-shadow: 0 0 5px #ffaa00, 0 0 10px #ffaa00;
+      margin-bottom: 0.5em;
+      font-family: 'Hiragino Mincho ProN', '游明朝', 'MS PMincho', serif;
     }
 
     h2 {
@@ -33,9 +39,12 @@
 
     p {
       font-size: 1em;
-      color: #000000;
-      max-width: 600px;
-      margin: 0 auto 1.5em;
+      max-width: 90vw;
+      width: 600px;
+      text-align: center;
+      margin-bottom: 1.5em;
+      word-break: normal;
+      overflow-wrap: break-word;
     }
 
     ul {
@@ -63,49 +72,39 @@
     }
 
     footer {
-      margin-top: 3em;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       font-size: 0.8em;
       color: #aaa;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8em;
-      }
-      h2 {
-        font-size: 1.2em;
-      }
-      p, li {
-        font-size: 0.95em;
-      }
     }
   </style>
 </head>
 <body>
-  <h1>RetroGadgetLaboratory</h1>
-
   <section>
+    <h1>RetroGadgetLaboratory</h1>
     <h2>1. イノベーションと懐古主義の融合</h2>
-    <p>「レトロ」に宿る温もりと、「ガジェット」に秘めた未来志向</p>
-  </section>
-
-  <section>
+    <p>「レトロ」に宿る温もりと、「ガジェット」に秘めた未来志向。</p>
     <h2>2. 持続可能性と実用性</h2>
-    <p>長く愛され、役立つガジェットを目指す。美しさだけじゃない、“日常に溶け込む性能”を</p>
-  </section>
-
-  <section>
+    <p>長く愛され、役立つガジェットを目指す。美しさだけじゃない、<br>“日常に溶け込む性能”を。</p>
     <h2>3. 無限の可能性</h2>
-    <p>無数の世界線の中から、私たちだけの「世界線」を探し続ける覚悟</p>
+    <p>無数の世界線の中から、私たちだけの「世界線」を探し続ける覚悟。</p>
   </section>
 
+  
+
+  
+
   <section>
-    <h2>2ページ目：製作物・アート展示</h2>
+    <h2>製作物・アート展示</h2>
     <p>現在準備中。COMING SOON...</p>
+    
   </section>
 
   <section>
-    <h2>3ページ目：部門紹介</h2>
+    <h2>部門紹介</h2>
     <p>RetroGadgetLaboratoryには以下の部門があります：</p>
     <ul>
       <li><a href="#research">研究開発部門</a></li>
@@ -114,11 +113,15 @@
       <li><a href="#publicity">広報・企画部門</a></li>
       <li><a href="#finance">財務部門</a></li>
     </ul>
-  </section>
+      
+    
+</section>
 
-  <footer>
-    &copy; 2025 CORE - レトロガジェット研究所<br>
-    Design by member005
-  </footer>
+
+    <div bottom: 1em; left: 1em; font-size: 0.8em; color: #666;>
+      &copy; 2025 CORE - レトロガジェット研究所<br>
+      Design by No.005
+    </div>
+
 </body>
 </html>
